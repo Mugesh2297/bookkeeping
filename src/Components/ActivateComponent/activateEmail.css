@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+.main{
+    background: radial-gradient(circle at 10% 20%, rgb(87, 108, 117) 0%, rgb(37, 50, 55) 100.2%);
+
+}
+.activatePage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover1{
+    background-color: white;
+    width: 30em;
+    height: 19em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(64, 62, 62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputEmail {
+    border: none;
+    background-color: rgb(175, 171, 171);
+    height: 4em;
+    width: 75%;
+    border-radius: 1.45em;
+    text-align: center;
+    font-size: medium;
+    font-weight: medium;
+    margin-top: 20px;
+    
+}
+
+.inputEmail:focus{
+    outline: solid orange;
+}
+
+.activate-btn{
+    width: 42%;
+    height: 3em;
+    background-color: orange;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 1.45em;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.activate-btn:hover{
+    transform: scale(1.1);
+}
+
+.text1{
+    position: relative;
+}
+
+.activeEmail{
+    font-weight: bold;
+    text-align: center;
+    margin:5px;
+}

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+.reset{
+    background: radial-gradient(circle at 10% 20%, rgb(87, 108, 117) 0%, rgb(37, 50, 55) 100.2%);
+
+}
+.resetPage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover3{
+    background-color: white;
+    width: 30em;
+    height: 23em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(72, 70, 70);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inputPassword {
+    border: none;
+    background-color: rgb(175, 171, 171);
+    height: 4em;
+    width: 75%;
+    border-radius: 1.45em;
+    text-align: center;
+    font-size: medium;
+    font-weight: medium;
+    /* margin-top: ; */
+}
+
+.inputPassword:focus{
+    outline: solid orange;
+}
+
+.resetpassword-btn{
+    width: 45%;
+    height: 3em;
+    background-color: orange;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 1.45em;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: medium;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.resetpassword-btn:hover{
+    transform: scale(1.2);
+}
+
+.text1{
+    position: relative;
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.text1:hover{
+    color: orange;
+    transform: scale(1.2);
+    font-weight: 600;
+   
+
+}
+
+.errormsg1{
+    font-weight: bold;
+    padding:5px;
+    text-align: center;
+}
+
+.formikmsg{
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+.navbar{
+    height: 60px;
+    border-bottom: 0.5px solid rgb(231, 228, 228);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(15, 14, 14);
+   background: #8e9eab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.wrapper{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #575757;
+    
+}
+.userIcon{
+    display: inline-block;
+    background-color: rgb(201, 238, 238);
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 2px #151414;
+}
+
+.welcomeText{
+    font-size: 18px;
+    color:rgb(27, 27, 27);
+    font-weight: 600;
+    
+}
+
+.logoutButton{
+  
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.arrow{
+    margin: 15px;
+    background-color:rgb(161, 157, 150);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 2px 2px 2px 2px #151414;
+    font-weight: bold;
+}

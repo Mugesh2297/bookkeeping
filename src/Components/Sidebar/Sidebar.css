@@ -1,0 +1,100 @@
+.sidebar{
+    flex: 1.1;
+    border-right: 0.5px solid lightgray;
+    min-height: 100vh;
+    background: radial-gradient(circle at 10% 20%, rgb(87, 108, 117) 0%, rgb(37, 50, 55) 100.2%);
+   
+}
+
+.top{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 23px;
+    font-weight: bold;
+    color:orange;
+    padding: 10px;
+    
+
+}
+.bookicon{
+   
+    color: white;
+    rotate: 20deg;
+}
+hr{
+    height: 0;
+    border: 0.5px solid lightgray;
+   
+}
+
+.center{
+    padding-left: 10px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color:white;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 2px solid lightgray;
+    font-weight: medium;
+}
+
+li:hover{
+    color: orange;
+}
+
+li:active{
+    color:orange;
+}
+.tags{
+    padding: 10px;
+}
+
+.navicon{
+    margin-left:10px;
+}
+.last{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 100px;
+    rotate: 10deg;
+}
+
+.nav_link{
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.nav_link:hover{
+    color: orange;
+}
+
+.nav_link:active{
+    color: orange;
+}
+
+.active{
+    color: orange;
+}
+
+
