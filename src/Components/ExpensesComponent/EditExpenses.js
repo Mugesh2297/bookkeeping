@@ -45,7 +45,7 @@ function EditExpenses() {
      try{
        
        console.log(formik.values.available);
-       let response =  await axios.put(`http://localhost:3001/expenses/updateExpenses/${params.id}`, 
+       let response =  await axios.put(`https://bookkeeping.onrender.com/expenses/updateExpenses/${params.id}`, 
        values,{
         headers:{
           accesstoken: localStorage.getItem("token"),
@@ -73,7 +73,7 @@ function EditExpenses() {
 
   let loadUser = async () => {
     try {
-      let user = await axios.get(`http://localhost:3001/expenses/getExpenses/${params.id}`,{
+      let user = await axios.get(`https://bookkeeping.onrender.com/expenses/getExpenses/${params.id}`,{
         headers:{
           accesstoken: localStorage.getItem("token"),
       }

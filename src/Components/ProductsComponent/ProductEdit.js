@@ -42,7 +42,7 @@ function ProductEdit() {
      try{
        
        console.log(formik.values.available);
-       let response =  await axios.put(`http://localhost:3001/products/updateProducts/${params.id}`, 
+       let response =  await axios.put(`https://bookkeeping.onrender.com/products/updateProducts/${params.id}`, 
        values= {
         productName: values.productName,
         price: values.price,
@@ -77,7 +77,7 @@ function ProductEdit() {
 
   let loadUser = async () => {
     try {
-      let user = await axios.get(`http://localhost:3001/products/getProducts/${params.id}`,{
+      let user = await axios.get(`https://bookkeeping.onrender.com/products/getProducts/${params.id}`,{
         headers:{
           accesstoken: localStorage.getItem("token"),
       }

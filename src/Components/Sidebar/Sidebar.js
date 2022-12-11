@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Sidebar.css";
-import { faBook, faBookOpen, faBoxesStacked, faCartShopping, faFileInvoice, faMoneyBill1Wave, faPeopleLine, faSackDollar, faTachometer} from '@fortawesome/free-solid-svg-icons';
+import { faBook, faBookOpen, faBoxesStacked, faCartShopping, faMoneyBill1Wave, faPeopleLine, faSackDollar, faTachometer} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NavLink } from 'react-router-dom';
 

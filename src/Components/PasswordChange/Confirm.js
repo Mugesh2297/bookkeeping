@@ -34,7 +34,7 @@ function Confirm() {
                 minUppercase: 1, minNumbers: 1, minSymbols: 1
               })) {
                 try {
-                    var response =  await axios.post(`http://localhost:3001/register/reset-password-page/${test.id}`, values);
+                    var response =  await axios.post(`https://bookkeeping.onrender.com/register/reset-password-page/${test.id}`, values);
                  console.log(response);
                  if(response.status===200){
                     Swal.fire({ title: response.data.message,  icon: 'success', confirmButtonText: 'okay'});

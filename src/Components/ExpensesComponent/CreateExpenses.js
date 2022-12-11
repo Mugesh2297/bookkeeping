@@ -24,7 +24,7 @@ function CreateExpenses() {
         onSubmit: async (values) => {
            console.log(values)
             try {
-                var response = await axios.post("http://localhost:3001/expenses/createexpense", values , {
+                var response = await axios.post("https://bookkeeping.onrender.com/expenses/createexpense", values , {
                     headers: {
                         accesstoken: localStorage.getItem("token"),
                     }

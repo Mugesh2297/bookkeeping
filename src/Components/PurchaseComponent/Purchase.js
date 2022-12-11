@@ -19,7 +19,7 @@ const Purchase = () => {
 
     let loadData = async () => {
         setLoading(true)
-        let users = await axios.get("http://localhost:3001/purchases/getPurchase", {
+        let users = await axios.get("https://bookkeeping.onrender.com/purchases/getPurchase", {
             headers: {
                 accesstoken: localStorage.getItem("token"),
             }
@@ -33,7 +33,7 @@ const Purchase = () => {
         try {
             let ask = window.confirm("Are You Sure Want to Delete This Data");
             if (ask) {
-                let response = await axios.delete(`http://localhost:3001/purchases/deletePurchase/${id}`,
+                let response = await axios.delete(`https://bookkeeping.onrender.com/purchases/deletePurchase/${id}`,
                     {
                         headers: {
                             accesstoken: localStorage.getItem("token"),

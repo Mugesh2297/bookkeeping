@@ -26,7 +26,7 @@ function EditPurchases() {
      try{
        
        console.log(formik.values.available);
-       let response =  await axios.put(`http://localhost:3001/purchases/updatePurchase/${params.id}`, 
+       let response =  await axios.put(`https://bookkeeping.onrender.com/purchases/updatePurchase/${params.id}`, 
        values,{
         headers:{
           accesstoken: localStorage.getItem("token"),
@@ -55,7 +55,7 @@ function EditPurchases() {
 
   let loadData = async () => {
 
-    let users = await axios.get("http://localhost:3001/sellers/getSeller", {
+    let users = await axios.get("https://bookkeeping.onrender.com/sellers/getSeller", {
         headers: {
             accesstoken: localStorage.getItem("token"),
         }
@@ -66,7 +66,7 @@ function EditPurchases() {
 }
   let loadUser = async () => {
     try {
-      let user = await axios.get(`http://localhost:3001/purchases/getPurchase/${params.id}`,{
+      let user = await axios.get(`https://bookkeeping.onrender.com/purchases/getPurchase/${params.id}`,{
         headers:{
           accesstoken: localStorage.getItem("token"),
       }

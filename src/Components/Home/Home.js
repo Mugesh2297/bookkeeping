@@ -121,7 +121,7 @@ function Home() {
   }, [])
   let loadData = async () => {
     setLoading(true)
-    let users = await axios.get("http://localhost:3001/expenses/getExpenses", {
+    let users = await axios.get("https://bookkeeping.onrender.com/expenses/getExpenses", {
       headers: {
         accesstoken: localStorage.getItem("token"),
       }
@@ -154,7 +154,7 @@ function Home() {
     setLoading(false)
   }
   let loadPurchase = async () => {
-    let users = await axios.get("http://localhost:3001/purchases/getPurchase", {
+    let users = await axios.get("https://bookkeeping.onrender.com/purchases/getPurchase", {
       headers: {
         accesstoken: localStorage.getItem("token"),
       }
@@ -163,7 +163,7 @@ function Home() {
     totalPurchase(users.data)
   }
   let loadProducts = async () => {
-    let users = await axios.get("http://localhost:3001/products/getProducts", {
+    let users = await axios.get("https://bookkeeping.onrender.com/products/getProducts", {
       headers: {
         accesstoken: localStorage.getItem("token"),
       }

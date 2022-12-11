@@ -18,7 +18,7 @@ const Sellers = () => {
     }, [])
     let loadData = async () => {
         setLoading(true)
-        let users = await axios.get("http://localhost:3001/sellers/getSeller", {
+        let users = await axios.get("https://bookkeeping.onrender.com/sellers/getSeller", {
             headers: {
                 accesstoken: localStorage.getItem("token"),
             }
@@ -32,7 +32,7 @@ const Sellers = () => {
         try {
             let ask = window.confirm("Are You Sure Want to Delete This Data");
             if (ask) {
-                let response = await axios.delete(`http://localhost:3001/sellers/deleteSeller/${id}`,
+                let response = await axios.delete(`https://bookkeeping.onrender.com/sellers/deleteSeller/${id}`,
                     {
                         headers: {
                             accesstoken: localStorage.getItem("token"),

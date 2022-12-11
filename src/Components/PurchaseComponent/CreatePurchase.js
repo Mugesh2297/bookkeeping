@@ -15,7 +15,7 @@ function CreatePurchase() {
     }, [])
     let loadData = async () => {
 
-        let users = await axios.get("http://localhost:3001/sellers/getSeller", {
+        let users = await axios.get("https://bookkeeping.onrender.com/sellers/getSeller", {
             headers: {
                 accesstoken: localStorage.getItem("token"),
             }
@@ -40,7 +40,7 @@ function CreatePurchase() {
         onSubmit: async (values) => {
             console.log(values)
             try {
-                var response = await axios.post("http://localhost:3001/purchases/createPurchase", values, {
+                var response = await axios.post("https://bookkeeping.onrender.com/purchases/createPurchase", values, {
                     headers: {
                         accesstoken: localStorage.getItem("token"),
                     }

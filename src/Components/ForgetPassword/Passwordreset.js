@@ -29,7 +29,7 @@ function Passwordreset() {
     },
     onSubmit: async (values) => {
         try {
-            var response = await axios.post("http://localhost:3001/register/resetpassword", values);
+            var response = await axios.post("https://bookkeeping.onrender.com/register/resetpassword", values);
           console.log(response)
          if(response.status===200){
             Swal.fire({ title:"Email sent to the mail",  icon: 'success', confirmButtonText: 'Okay'});
@@ -47,38 +47,7 @@ function Passwordreset() {
 })
   
   return (
-//     <div style={{ margin: "10%", paddingLeft: "30%" }}><Typography variant="h4">
-//     Reset Password
-// </Typography>
-//     <br />
-//     <form onSubmit={formik.handleSubmit}>
-//         <div>
-//             <TextField id="filled-basic" label="Email"
-//                 name="email"
-//                 variant="filled"
-//                 type="email" style={{ width: "35%" }} placeholder="Enter Your Email"
-//                 value={formik.values.email} onChange={formik.handleChange}
-//             />
-//             <br/>
-//             <span style={{ color: 'red' }}>{formik.errors.email}</span>
-//         </div>
-//         <br />
-//         <Button variant="contained" type="submit">Reset Password</Button>
-//               <br /><br />
-              
-        
 
-
-//     </form>
-//     <br />
-        
-// <div><span><Link to="/">Remember Your password Login??</Link></span></div>
-// <br/>
-// <div><span><Link to="/register">Don't have a account Register??</Link></span></div>
-
-
-//     {/* <h3><Link to={/Resetpassword}>ResetPassword </h3></Link> */}
-// </div>
 <body className="content">
 <div className='forgetPage'>
 <form onSubmit={formik.handleSubmit}>

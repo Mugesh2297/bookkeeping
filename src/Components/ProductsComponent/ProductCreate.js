@@ -41,7 +41,7 @@ function ProductCreate() {
     onSubmit: async (values) => {
      
      try{
-      var response = await axios.post("http://localhost:3001/products/createProduct",values={
+      var response = await axios.post("https://bookkeeping.onrender.com/products/createProduct",values={
         productName: values.productName,
         price: values.price,
         bought: values.bought,

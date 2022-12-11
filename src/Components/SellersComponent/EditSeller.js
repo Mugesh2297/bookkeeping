@@ -37,7 +37,7 @@ function EditSeller() {
       
      try{
        
-       let response =  await axios.put(`http://localhost:3001/sellers/updateSeller/${params.id}`, 
+       let response =  await axios.put(`https://bookkeeping.onrender.com/sellers/updateSeller/${params.id}`, 
        values,{
         headers:{
           accesstoken: localStorage.getItem("token"),
@@ -65,7 +65,7 @@ function EditSeller() {
 
   let loadUser = async () => {
     try {
-      let user = await axios.get(`http://localhost:3001/sellers/getSeller/${params.id}`,{
+      let user = await axios.get(`https://bookkeeping.onrender.com/sellers/getSeller/${params.id}`,{
         headers:{
           accesstoken: localStorage.getItem("token"),
       }

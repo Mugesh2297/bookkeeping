@@ -45,7 +45,7 @@ function RegisterComponent() {
                 minUppercase: 1, minNumbers: 1, minSymbols: 1
               })) {
                 try {
-                    var response = await axios.post("http://localhost:3001/register/signup", values);
+                    var response = await axios.post("https://bookkeeping.onrender.com/register/signup", values);
                     localStorage.setItem("token", response.data);
                   if(response.data.code === "newUseradded")  {
                     Swal.fire({ title: response.data.message,  icon: 'success', confirmButtonText: 'Login'});

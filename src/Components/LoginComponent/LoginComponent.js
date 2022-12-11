@@ -29,7 +29,7 @@ function LoginComponent() {
 
         onSubmit: async (values) => {
             try {
-                var response = await axios.post("http://localhost:3001/register/signin", values);
+                var response = await axios.post("https://bookkeeping.onrender.com/register/signin", values);
                 console.log(response)
                 localStorage.setItem("token", response.data);
                 navigate("/home");

@@ -19,7 +19,7 @@ const Product = () => {
     }, [])
     let loadData = async () => {
         setLoading(true)
-        let users = await axios.get("http://localhost:3001/products/getProducts", {
+        let users = await axios.get("https://bookkeeping.onrender.com/products/getProducts", {
             headers: {
                 accesstoken: localStorage.getItem("token"),
             }
@@ -33,7 +33,7 @@ const Product = () => {
         try {
             let ask = window.confirm("Are You Sure Want to Delete This Data");
             if (ask) {
-                let response = await axios.delete(`http://localhost:3001/products/deleteProducts/${id}`,
+                let response = await axios.delete(`https://bookkeeping.onrender.com/products/deleteProducts/${id}`,
                     {
                         headers: {
                             accesstoken: localStorage.getItem("token"),

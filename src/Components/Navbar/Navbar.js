@@ -2,7 +2,6 @@ import React from 'react';
 import "./navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faArrowRightFromBracket, faUser } from '@fortawesome/free-solid-svg-icons';
-import jwt_decode from "jwt-decode";
 import { useNavigate } from 'react-router-dom';
 
 

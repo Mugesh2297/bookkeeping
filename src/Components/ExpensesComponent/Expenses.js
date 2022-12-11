@@ -16,7 +16,7 @@ function Expenses() {
     }, [])
     let loadData = async () => {
         setLoading(true)
-        let users = await axios.get("http://localhost:3001/expenses/getExpenses", {
+        let users = await axios.get("https://bookkeeping.onrender.com/expenses/getExpenses", {
             headers: {
                 accesstoken: localStorage.getItem("token"),
             }
@@ -30,7 +30,7 @@ function Expenses() {
         try {
             let ask = window.confirm("Are You Sure Want to Delete This Data");
             if (ask) {
-                let response = await axios.delete(`http://localhost:3001/expenses/deleteExpenses/${id}`,
+                let response = await axios.delete(`https://bookkeeping.onrender.com/expenses/deleteExpenses/${id}`,
                     {
                         headers: {
                             accesstoken: localStorage.getItem("token"),

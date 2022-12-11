@@ -40,7 +40,7 @@ function CreateCustomer() {
     onSubmit: async (values) => {
      
      try{
-      var response = await axios.post("http://localhost:3001/customers/createCustomer",values,
+      var response = await axios.post("https://bookkeeping.onrender.com/customers/createCustomer",values,
       {headers:{
         accesstoken: localStorage.getItem("token"),
     }});
