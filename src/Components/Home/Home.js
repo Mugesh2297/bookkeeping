@@ -111,7 +111,6 @@ function Home() {
   const [balance, setBalance] = useState(0);
   const [expenses, setExpenses] = useState(0);
   const [sold, setSold] = useState(0);
-  const [isLoading, setLoading] = useState(false);
 
 
   useEffect(() => {
@@ -120,7 +119,7 @@ function Home() {
     loadPurchase();
   }, [])
   let loadData = async () => {
-    setLoading(true)
+  
     let users = await axios.get("https://bookkeeping.onrender.com/expenses/getExpenses", {
       headers: {
         accesstoken: localStorage.getItem("token"),
@@ -151,7 +150,7 @@ function Home() {
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: lable
     })
-    setLoading(false)
+   
   }
   let loadPurchase = async () => {
     let users = await axios.get("https://bookkeeping.onrender.com/purchases/getPurchase", {
